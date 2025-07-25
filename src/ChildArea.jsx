@@ -6,9 +6,9 @@ const style = {
   backgroundColor: 'khaki',
 };
 
+// コンポーネントのmemo化 propsに変更があった場合のみ再レンダリング。
 export const ChildArea = memo((props) => {
   const { open, onClickClose } = props;
-  console.log(props);
   console.log('ChildAreaがレンダリングされた！')
   const data = [...Array(2000).keys()];
   data.forEach(() => {
