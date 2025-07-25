@@ -5,7 +5,6 @@ import './App.css';
 function App() {
   console.log('App');
   const [text, setText] = useState('');
-  const [count, setCount] = useState(0);
   const [open, setOpen] = useState(false);
   const onChangeText = (e) => {
     setText(e.target.value);
