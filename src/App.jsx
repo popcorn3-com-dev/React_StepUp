@@ -11,7 +11,7 @@ function App() {
 
   const onClickOpen = () => setOpen(!open);
 
-  // 関数のmemo化　第2引数に変更があった場合に再レンダリング。引数が空の場合は初期レンダリングで使いまわし。
+  // useCallback・・・関数のmemo化　第2引数に変更があった場合に再レンダリング。引数が空の場合は初期レンダリングで使いまわし。
   const onClickClose = useCallback(() => setOpen(false), [setOpen]);
 
   return (
