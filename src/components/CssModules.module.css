@@ -16,5 +16,8 @@
 .button {
   background-color: #aaa;
 }
+.button:hover {
+  background-color: #3aa;
+}
 
 /*# sourceMappingURL=CssModules.module.css.map */

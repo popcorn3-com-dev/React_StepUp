@@ -14,5 +14,9 @@
 }
 
 .button {
-    background-color: #aaa
+    background-color: #aaa;
+
+    &:hover {
+        background-color: #3aa;
+    }
 }
