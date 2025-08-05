@@ -11,6 +11,8 @@
     "sass": "sass src/components/CssModules.module.scss src/components/CssModules.module.css"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sass": "^1.89.2",
