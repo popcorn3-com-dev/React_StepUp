@@ -1,0 +1,34 @@
+export const StyledJsx = () => {
+    return (
+        <>
+            <div className="container">
+                <p className="title">--StyledJsx--</p>
+                <button className="button">FIGHT!!</button>
+            </div>
+            <style jsx='true'>{`
+                .container {
+                    margin-top: 20px;
+                    border: solid 2px #e82043;
+                    border-radius: 20px;
+                    padding: 8px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .title {
+                    color: #008800;
+                }
+
+                .button {
+                    background-color: #aaa;
+
+                    &:hover {
+                        background-color: #3aa;
+                    }
+                }
+            `}</style>
+        </>
+    )
+}
