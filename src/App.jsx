@@ -8,11 +8,10 @@ import { Navi } from './Navi';
 function App() {
   return (
     <>
-      <Navi />
-
       <BrowserRouter>
+        <Navi />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='page1' element={<Page1 />} />
           <Route path='page2' element={<Page2 />} />
         </Routes>

@@ -1,12 +1,13 @@
+import { Link } from "react-router";
+
 export const Navi = () => {
     return (
         <div>
-            <p>Navi</p>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="Page1">Page1</a></li>
-                <li><a href="Page2">Page2</a></li>
-            </ul>
+            <nav>
+                <Link to='/'>Home</Link><br />
+                <Link to='/page1'>Page1</Link><br />
+                <Link to='/page2'>Page2</Link>
+            </nav>
         </div>
     )
 }
