@@ -1,19 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { CssModules } from './components/CssModules';
-import { Emotion } from './components/Emotion';
-import { InlineStyle } from './components/InlineStyle';
-import { StyledJsx } from './components/Styled';
-import { StyledComponents } from './components/StyledComponents';
+import { Home } from './components/Home';
+import { Page1 } from './components/Page1';
+import { Page2 } from './components/Page2';
+import { Navi } from './Navi';
 
 function App() {
   return (
-    <div>
-      <InlineStyle />
-      <CssModules />
-      <StyledJsx />
-      <StyledComponents />
-      <Emotion />
-    </div>
+    <>
+      <Navi />
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='page1' element={<Page1 />} />
+          <Route path='page2' element={<Page2 />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
