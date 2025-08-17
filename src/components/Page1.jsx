@@ -1,8 +1,12 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 
 export const Page1 = () => {
     const arr = [...Array(100).keys()];
+    const navigation = useNavigate();
+    const onClickDetailA = () => {
+        navigation('detailA')
+    }
 
     return (
         <div>
@@ -10,6 +14,7 @@ export const Page1 = () => {
             <nav>
                 <Link to='detailA' state={arr}>DetailA</Link><br />
                 <Link to='detailB'>DetailB</Link><br />
+                <button onClick={onClickDetailA}>DetailA</button>
             </nav>
             <Outlet />
         </div>

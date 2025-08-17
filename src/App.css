@@ -8,3 +8,14 @@
 *{
   box-sizing: border-box;
 }
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f5e2e2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
